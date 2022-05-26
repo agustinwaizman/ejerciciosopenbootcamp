@@ -1,0 +1,30 @@
+//parte 1 
+
+public class ejercicio3 {
+
+    public static void main(String[] args){
+        int resultado;
+        resultado = sumar(10, 20, 30);
+        System.out.println(resultado);
+    }
+    public static int sumar(int a, int b, int c){
+        return a + b + c;
+    }
+}
+
+//parte 2
+
+public class Main {
+    public static void main(String[] args){
+        Coche miCoche = new Coche();
+        miCoche.AgregarPuerta();
+        miCoche.AgregarPuerta();
+        System.out.println(miCoche.puertas);
+    }
+}
+class Coche{
+    public int puertas = 4;
+    public void AgregarPuerta() {
+        this.puertas++;
+    }
+}
